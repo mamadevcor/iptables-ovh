@@ -3,8 +3,8 @@ iptables -t raw -F
 iptables -F 
 
 #--- whitelist ip ---- 
-iptables -t mangle -A PREROUTING -s yourip -j ACCEPT 
-iptables -t raw -A PREROUTING -s yourip -j ACCEPT 
+iptables -t mangle -A PREROUTING -s 51.79.173.191 -j ACCEPT 
+iptables -t raw -A PREROUTING -s 51.79.173.191 -j ACCEPT 
 #--- BLOCK IP --- 
 ipset create niggers hash:net maxelem 12288 timeout 10 
 iptables -t mangle -A PREROUTING -m set --match-set niggers src -j DROP 
