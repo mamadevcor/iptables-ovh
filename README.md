@@ -1,1 +1,1 @@
-Belajar Tenrang Anti DDos
+Learn :)
